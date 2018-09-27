@@ -1,18 +1,11 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Home from './Home'
 
 export default class App extends Component {
-  state = {
-    myState : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit'
-  }
-  change = () => this.setState({myState: 'HelloWorld'})
   render() {
     return (
-      <View style={styles.container}>
-        <Text onPress={this.change}>
-          {this.state.myState}
-        </Text>
-      </View>
+      <Home />
     );
   }
 }
