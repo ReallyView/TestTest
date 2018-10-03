@@ -3,6 +3,7 @@ import { View, Text } from 'react-native'
 import Icon from 'react-native-vector-icons/Ionicons'
 import { MenuProvider, Menu, MenuOptions, MenuOption, MenuTrigger } from 'react-native-popup-menu'
 
+
 class Header extends Component {
   render () {
     return (
@@ -100,9 +101,38 @@ class MainContent extends Component {
 class HomeScreen extends Component {
   render () {
     return (
-      <MainContent />
+      <MenuProvider>
+        <View>
+          <Header />
+          <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+            <LeftContent />
+            <CenterContent />
+            <RightContent />
+          </View>
+        </View>
+      </MenuProvider>
     )
   }
 }
-
+/*
+class HomeScreen extends Component {
+  render () {
+    return (
+      <MenuProvider>
+      <View>
+        <Header />
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+          <Icon
+            name='ios-menu'
+            size={40}
+            onPress={() => this.props.navigation.openDrawer()}
+          />
+          <CenterContent />
+          <RightContent />
+        </View>
+      </View>
+    </MenuProvider>
+  )
+  }
+} */
 export default HomeScreen
