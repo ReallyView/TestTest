@@ -1,0 +1,60 @@
+https://medium.com/@dooboolab/running-react-native-app-in-ubuntu-18-04-7d1db4ac7518
+
+react-native tutorial
+https://g6ling.gitbooks.io/react-native-tutorial-korean/content/3-2ko.html
+
+아이콘 이름
+https://ionicframework.com/docs/ionicons/
+
+side menu example 1
+https://stackoverflow.com/questions/42747087/implementing-sidebar-hamburger-menu-with-react-native-drawer
+
+side menu example 2
+https://shift.infinite.red/react-navigation-drawer-tutorial-a802fc3ee6dc
+
+
+side menu example and explaination
+https://www.youtube.com/watch?v=213NhQ19_IE
+
+side menu example and explaination 2
+https://www.youtube.com/watch?v=bJmsmrRtMyw
+
+reactnavigation
+https://reactnavigation.org
+
+Popup Menu
+https://snack.expo.io/@rroossyyiidd/react-native-popup-menu
+
+라이브러리
+react-native-drawer
+react-native-vector-icons/Ionicons
+
+디자인 예시
+material design
+
+원노트
+https://1drv.ms/u/s!AjqXl6GdDX_rgxNnVXDdjV_rJ92t
+
+설치
+npm install react-nagivation --save
+npm install react-native-vector-icons --save
+npm install native-base --save
+npm install react-native --save
+npm install react-native-popup-menu --save
+**********주의할 점***************
+<MenuContext>대신에 <MenuProvider> 사용.
+<MenuProvider>는 return 다음에 바로와서 가장 위에 쓸 것.
+createStackNavigator와 createDrawerNavigator를 같이 사용할 때는 createDrawerNavigator를 createStackNavigator안에 넣어야 한다.
+
+************질문***********
+업데이트하고나서 주석이 안됨, 특별한 방법이 있는지
+bind() ??
+constructor(props) {
+  super(props);
+} ??
+*************필기***********
+props : 컴포넌트에서 사용할 데이터 중 변동되지 않는 데이터를 다룰 때 사용됨.
+state : 컴포넌트에서 유동적인 데이터를 다룰 때
+
+graphql : 클라이언트에서 쿼리를 만들어서 서버로 보내면 원하는 결과를 받을 수 있음
+
