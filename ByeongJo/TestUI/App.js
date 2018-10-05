@@ -1,10 +1,10 @@
-import React from 'react';
-import Stack from  './DrawerNavigation'
+import React from 'react'
+import Stack from './StackNavigaton'
 
 export default class App extends React.Component {
-  render() {
+  render () {
     return (
       <Stack />
-    );
+    )
   }
 }
