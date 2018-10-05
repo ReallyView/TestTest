@@ -1,7 +1,24 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet, ScrollView } from 'react-native'
 import Icon from 'react-native-vector-icons/Ionicons'
-import {createDrawerNavigator} from 'react-navigation';
+import {createDrawerNavigator, DrawerActions} from 'react-navigation';
+import Vote from './Vote'
+import Reply from './Reply'
+import Subscript from './Subscript'
+
+const Root = createDrawerNavigator (
+  {
+    vote: {
+      screen : Vote
+    },
+    subscript: {
+      screen : Subscript
+    },
+    reply : {
+      screen : Reply
+    },
+  },
+)
 
 class BlankBar extends Component {
   render () {
@@ -17,11 +34,12 @@ class PersonIcon extends Component {
       <Icon
         name = 'md-person'
         size = {40}
-        onPress = {() => alert('Hello')}
+        onPress = {()=>{this.props.navigation.dispatch(DrawerActions.openDrawer())}}
       />
     )
   }
 }
+
 
 class AppName extends Component {
   render () {
@@ -124,10 +142,10 @@ class HomeScreen extends Component {
   render () {
     return (
       <View style={{flex:1}}>
-        <BlankBar />
+        <BlankBar/>
         <Header />
-        <Contents />
-        <Bottom />
+        <Contents/>
+        <Bottom/>
       </View>
     )
   }
