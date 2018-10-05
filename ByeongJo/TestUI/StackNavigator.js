@@ -1,11 +1,7 @@
-import { createStackNavigator } from 'react-navigation'
-import Vote from './Vote'
-import Subscript from './Subscript'
-import Reply from './Reply'
-import Drawer from './DrawerNavigation'
-import { Component } from 'react'
-import Icon from 'react-native-vector-icons/Ionicons'
 import React from 'react'
+import { createStackNavigator } from 'react-navigation'
+import Drawer from './DrawerNavigation'
+import SearchScreen from './SearchScreen'
 
 const Stack = createStackNavigator (
   {
@@ -15,15 +11,9 @@ const Stack = createStackNavigator (
         header : null
       }
     },
-    Vote: {
-      screen : Vote
-    },
-    Subscript: {
-      screen : Subscript
-    },
-    Reply : {
-      screen : Reply
-    },
+    Search : {
+      screen : SearchScreen
+    }
   }
 )
 

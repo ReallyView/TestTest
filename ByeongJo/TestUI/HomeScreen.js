@@ -31,7 +31,6 @@ class AppName extends Component {
         <Icon
           name = 'ios-search'
           size = {40}
-          onPress = {() => alert('Search')}
         />
       </View>
     )
@@ -91,7 +90,6 @@ class Bottom extends Component {
           <Icon
             name = 'md-home'
             size = {40}
-            onPress={this.props.GoHome}
           />
           <Text>home</Text>
         </View>
@@ -126,6 +124,11 @@ class HomeScreen extends Component {
     return (
       <View style={{flex:1}}>
         <BlankBar/>
+        <Icon
+          name = 'ios-search'
+          size = {40}
+          onPress = {()=>this.props.navigation.navigate('Search')}
+        />
         <Header openDrawer={()=>this.props.navigation.openDrawer()}/>
         <Contents/>
         <Bottom />
