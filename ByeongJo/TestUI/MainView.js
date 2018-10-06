@@ -1,6 +1,6 @@
 //
 // 작성자 : 김병조
-// 설명 : HomeScreen에 들어갈 기본적인 class들과 HomeScreen class 구현
+// 설명 : MainView에 들어갈 기본적인 class들과 MainView class 구현
 // 받아야 할 props : 없음.
 
 import React, { Component } from 'react'
@@ -123,7 +123,7 @@ class Bottom extends Component {
   }
 }
 
-class HomeScreen extends Component {
+class MainView extends Component {
   render () {
     return (
       <View style={{ flex: 1 }}>
@@ -164,4 +164,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default HomeScreen
+export default MainView

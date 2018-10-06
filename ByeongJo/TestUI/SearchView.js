@@ -1,13 +1,13 @@
 //
 // 작성자 : 김병조
-// class : SearchSceen
-// 설명 : SearchScreen 구현, createStackNavigator에 들어갈 UI.
+// class : SearchView
+// 설명 : SearchView 구현, createStackNavigator에 들어갈 UI.
 // 전달 할 state : ItemName
 
 import React, { Component } from 'react'
 import { View, Text, TextInput, Button } from 'react-native'
 
-class SearchScreen extends Component {
+class SearchView extends Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -36,4 +36,4 @@ class SearchScreen extends Component {
   }
 }
 
-export default SearchScreen
+export default SearchView

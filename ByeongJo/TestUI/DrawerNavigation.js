@@ -5,24 +5,24 @@
 // 받아야 할 props : 없음.
 
 import { createDrawerNavigator } from 'react-navigation'
-import HomeScreen from './HomeScreen'
-import Vote from './VoteScreen'
-import Subscript from './SubscriptScreen'
-import Reply from './ReplyScreen'
+import MainView from './MainView'
+import VoteView from './VoteView'
+import SubscriptView from './SubscriptView'
+import ReplyView from './ReplyView'
 
 const Drawer = createDrawerNavigator(
   {
-    Home: {
-      screen: HomeScreen
+    Main: {
+      screen: MainView
     },
     Vote: {
-      screen: Vote
+      screen: VoteView
     },
     Subscript: {
-      screen: Subscript
+      screen: SubscriptView
     },
     Reply: {
-      screen: Reply
+      screen: ReplyView
     }
   }
 )

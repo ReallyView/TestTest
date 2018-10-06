@@ -6,7 +6,7 @@
 
 import { createStackNavigator } from 'react-navigation'
 import Drawer from './DrawerNavigation'
-import SearchScreen from './SearchScreen'
+import SearchView from './SearchView'
 
 const Stack = createStackNavigator(
   {
@@ -17,7 +17,7 @@ const Stack = createStackNavigator(
       }
     },
     Search: {
-      screen: SearchScreen
+      screen: SearchView
     }
   }
 )
