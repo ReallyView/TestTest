@@ -6,7 +6,7 @@
 //
 
 import React from 'react';
-import View from 'react-native';
+import {View} from 'react-native';
 import Buttons from './Buttons';
 import Contents from './Contents'
 
@@ -18,6 +18,7 @@ class NavBar extends React.Component {
             title: params ? params.ItemName : 'Reviews',
         };
       };
+
       render() {
         return(<View/>)
       }

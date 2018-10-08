@@ -35,6 +35,7 @@ class AppName extends Component {
         <Icon
           name='ios-search'
           size={40}
+          onPress={this.props.goSearch}
         />
       </View>
     )
@@ -57,7 +58,7 @@ class Header extends Component {
     return (
       <View style={styles.HeaderLayout}>
         <PersonIcon openDrawer={this.props.openDrawer} />
-        <AppName />
+        <AppName goSearch={this.props.GoSearch}/>
         <PlusIcon />
       </View>
     )
@@ -128,12 +129,7 @@ class MainView extends Component {
     return (
       <View style={{ flex: 1 }}>
         <BlankBar />
-        <Icon
-          name='ios-search'
-          size={40}
-          onPress={() => this.props.navigation.navigate('Search')}
-        />
-        <Header openDrawer={() => this.props.navigation.openDrawer()} />
+        <Header openDrawer={() => this.props.navigation.openDrawer()} GoSearch={() => this.props.navigation.navigate('Search')}/>
         <Contents />
         <Bottom />
       </View>
